@@ -7,6 +7,7 @@ on:
     branches:
       - develop
       - staging
+      - main
 
 # Jobs to carry out
 jobs:
@@ -28,7 +29,7 @@ jobs:
       # Install dependencies
       - name: 🧰 Install Deps
         run: npm install
-        
+
       # Run lint
       - name: Run Lint
         run: npm run lint
