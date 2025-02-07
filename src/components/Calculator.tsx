@@ -10,7 +10,7 @@ export default function Calculator() {
   const [value, setValue] = useState(0);
 
   const handleAddClick = () => {
-    setCalcState({ total: calcState.total + value, previousTotal: calcState.total});
+    setCalcState({ total: calcState.total + value, previousTotal: calcState.total });
   };
 
   return (
@@ -27,6 +27,7 @@ export default function Calculator() {
       <button className="btn btn-primary" type="button" onClick={handleAddClick}> Add </button>
       <p className="card-text">Total: {calcState.total}</p>
       <p className="card-text">Previous Total: {calcState.previousTotal}</p>
+      <p>Testing out github actions</p>
     </div>
   );
 }
